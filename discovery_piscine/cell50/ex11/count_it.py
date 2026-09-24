@@ -1,0 +1,9 @@
+import sys
+
+if len(sys.argv) == 1:
+    print("none")
+else:
+    print("parameters:", len(sys.argv) - 1)
+
+    for i in range(1, len(sys.argv)):
+        print(sys.argv[i] + ":", len(sys.argv[i]))
